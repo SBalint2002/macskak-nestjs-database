@@ -7,17 +7,27 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <style>
+        div {
+            background-color: lightgreen;
+            width: 30%;
+            margin: 0 auto;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
-    <form method="POST">
-        <p>
-            Szem szín: <input type="text" name="szemszin" required>
-        </p>
-        <p>
-            Súly: <input type="number" name="suly" required min="1">
-        </p>
-        <input type="submit" value="New cat">
-    </form>
-    <a href="/">Vissza a főoldalra</a>
+    <div class="col-sm-6 container-fluid">
+        <form method="POST">
+            <p>
+                Szem szín: <input type="text" name="szemszin" required>
+            </p>
+            <p>
+                Súly: <input type="number" name="suly" required min="1">
+            </p>
+            <input type="submit" value="New cat">
+        </form>
+        <a href="/">Vissza a főoldalra</a>
+    </div>
 </body>
 </html>
